@@ -16,9 +16,9 @@ from urllib.parse import urlencode
 import threading
 import queue
 import re
+import os
+TOKEN = os.getenv("BOT_TOKEN")
 
-# ==================== КОНСТАНТИ ====================
-TOKEN = "8348186516:AAF_jyyE9nQy_LE7MCKsNmRf7BbtyN_PMAA"  # ⚠️ ЗАМІНІТЬ НА ВАШ ТОКЕН!
 API_URL = f"api.telegram.org"
 
 # ==================== БАЗА ДАНИХ ====================
@@ -1715,4 +1715,5 @@ if __name__ == "__main__":
     print(f"• Повідомлень: {stats['total_messages']}")
     print(f"• Користувачів: {stats['total_users']}")
     print("=" * 50)
+
     print("👋 До побачення!")
